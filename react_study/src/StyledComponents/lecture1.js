@@ -1,4 +1,4 @@
-import "../App.css";
+import styles from "../App.module.css";
 import { Fragment } from "react";
 
 // Lecture1.  기존의 CSS 파일 방식
@@ -9,6 +9,7 @@ const Lecture1 = () => {
         <Button danger />
         <Button />
       </Fragment>
+      <footer> --- </footer>
     </div>
   );
 };
@@ -16,7 +17,11 @@ const Lecture1 = () => {
 const Button = ({ danger }) => {
   return (
     <button
-      className={danger ? "button button--danger" : "button button--success"}
+      className={
+        danger
+          ? `${styles.button} + ${styles.button} + --danger`
+          : `${styles.button} + ${styles.button} + --success`
+      }
     >
       Hello
     </button>
