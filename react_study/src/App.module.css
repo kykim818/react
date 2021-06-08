@@ -9,7 +9,7 @@
 }
 
 .button:active,
-button:focus {
+.button:focus {
   outline: none;
 }
 

@@ -19,8 +19,8 @@ const Button = ({ danger }) => {
     <button
       className={
         danger
-          ? `${styles.button} + ${styles.button} + --danger`
-          : `${styles.button} + ${styles.button} + --success`
+          ? `${styles.button} ${styles["button--success"]}`
+          : `${styles.button} ${styles["button--danger"]}`
       }
     >
       Hello
