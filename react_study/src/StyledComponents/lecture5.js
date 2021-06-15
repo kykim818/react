@@ -23,11 +23,11 @@ const awesomeCard = css`
 // input의 attribute를 설정 가능
 // props까지 만들 수 있음
 // inline 속성 값보다 우선 순위를 가짐
-const Input = styled.input.attrs({
-  required: true,
+const Input = styled.input.attrs((props) => ({
+  required: props.required,
   placeholder: "Test",
   color: "1",
-})`
+}))`
   border: none;
   ${awesomeCard}
   background-color: ${(props) => (props.color ? "red" : "blue")};
@@ -37,7 +37,7 @@ const Lecture5 = () => {
   return (
     <div>
       <Container>
-        <Input placeholder="hello" />
+        <Input placeholder="hello" required={true} />
       </Container>
       <GlobalStyle />
     </div>
