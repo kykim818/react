@@ -11,4 +11,11 @@
 
 # Vanilla Redux
 
-Learning Vanilla Redux
+Implementing TODO List through Learning Vanilla Redux
+
+# React Redux
+
+Implementing TODO List through Learning React-Redux
+
+- mapStateToProps
+- mapDispatchToProps
